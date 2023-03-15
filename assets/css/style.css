@@ -1,0 +1,788 @@
+@font-face {
+  font-family: "Agustina";
+  src: url(../fonts/Agustina.woff);
+}
+
+
+/*CSS variable declaration for light/dark mode*/
+
+html[data-theme="light"] {
+  --bg-mybtn: red;
+  --bg-nav: black;
+  --bg-nav-img: black;
+  --bg-footer: #DDE1EC;
+  --bg: #ffffff;
+  --text: #191919;
+  --text-color: #6c757d;
+  --col-icon: black;
+  --col-bd-radius: rgb(2, 2, 2);
+  --col-box-shadow: #000000 2px 2px 4px, #4D4D4D -2px -2px 4px;
+  --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4D4D4D -2px -2px 4px;
+  --col-bd-icon: transparent;
+  --bg-icon: #fff;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github: #24292e;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail: rgb(209, 82, 82);
+  --col-icon-google-scholar: #3cba54;
+  --col-icon-codeforces: rgb(19, 145, 184);
+  --col-icon-leetcode: rgb(255, 181, 62);
+  --shadow-col: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] {
+  --bg-mybtn: rgb(230, 109, 129);
+  --bg-nav: #6617cb;
+  --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg-footer: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg: #191919;
+  --text: #ffffff;
+  --text-color: #fff;
+  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+  --txt-fill: transparent;
+  --col-icon: white;
+  --col-bd-radius: black;
+  --col-bd-icon: transparent;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7), -5px -5px 10px rgba(255, 255, 255, 0.1);
+  --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px, inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-icon-twitter: #1da1f2;
+  --col-icon-dribbble: #ea4c89;
+  --col-icon-linkedin: #0e76a8;
+  --col-icon-kaggle: #41aff3;
+  --col-icon-github: #24292e;
+  --col-icon-instagram: rgb(201, 94, 174);
+  --col-icon-mail: rgb(209, 82, 82);
+  --col-icon-google-scholar: #3cba54;
+  --col-icon-codeforces: rgb(19, 145, 184);
+  --col-icon-leetcode: rgb(255, 181, 62);
+  --col-white: #fff;
+}
+
+
+/*
+---------------------------
+      SCROLLBAR
+---------------------------
+*/
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #bb86fc;
+  border-radius: 2px;
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  max-height: 10px;
+  -webkit-box-shadow: inset 0 0 6px #bb86fc;
+  background: #bb86fc;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ca9eff;
+  
+}
+
+/* Custom Scrollbar for Mozilla Firefox*/
+html{
+  overflow-y: visible;
+  scrollbar-color: #ca9eff #f1f1f1;
+  scrollbar-width: auto;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+}
+.text-center heading1 exp-head {
+  color: white;
+}
+
+
+/* Scroll to Top button */
+
+#btnScrollToTop {
+  width: 50px;
+  height: 50px;
+  background-color: #bb86fc;
+  color: #fff;
+  margin: 8px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  position: fixed;
+  outline: none;
+  bottom: 10px;
+  right: 10px;
+  animation: up 1.5s infinite;
+  -webkit-animation: up 1.5s infinite;
+}
+
+
+/*
+---------------------------------------
+ SCROLL TO TOP BUTTON MICROANIMATION
+---------------------------------------
+*/
+
+@keyframes up {
+  0% {
+      transform: translate(0);
+  }
+  20% {
+      transform: translateY(-15px);
+  }
+  40% {
+      transform: translate(0);
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+      transform: translate(0);
+  }
+  20% {
+      transform: translateY(-15px);
+  }
+  40% {
+      transform: translate(0);
+  }
+}
+
+
+/* smooth scrolling to top */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*
+------------------------------------
+   HAMBURGER ANIMATION
+------------------------------------
+*/
+
+.hamburger_wrapper {
+  float: right;
+}
+
+.hamburger {
+  width: 2.5em;
+  height: 2em;
+  font-size: 11px;
+  cursor: pointer;
+  position: relative;
+}
+
+.first,
+.second,
+.third {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: .45em;
+  width: 100%;
+  float: left;
+  border-radius: 2px;
+  transition: all .35s ease-in-out;
+}
+
+.first {
+  top: 0px;
+}
+
+.is-active .first {
+  transform-origin: .167em .33em;
+  transform: rotate(45deg) translate(0.167em, -0.25em);
+}
+
+.second {
+  top: 50%;
+  margin-top: -.25em;
+}
+
+.is-active .second {
+  opacity: 0;
+  transform: translateX(8em)
+}
+
+.third {
+  bottom: 0px;
+  transform-origin: .25em -0.33em;
+}
+
+.is-active .third {
+  transform: rotate(-45deg) translate(-0.167em, 0.083em);
+}
+
+.navbar-brand {
+  font-family: Agustina;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar {
+  color: #000000;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 2px 2px rgb(230, 230, 230);
+}
+
+/* Dark Mode toggle switch button */
+.dark_toggler {
+  -webkit-appearance: none;
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+  background-size: cover;
+  border-radius: 50px;
+  outline: none;
+  transition: background-image 0.9s;
+  box-shadow: 0px 2px 5px 1px gray;
+}
+
+.dark_toggler:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: navy;
+  border-radius: 50px;
+  transition: all 0.9s;
+  background-color: #f7ca33;
+}
+
+.dark_toggler:checked {
+  background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+  transition: background-image 0.9s;
+  box-shadow: 0px 2px 5px 1px rgb(187, 134, 201);
+}
+
+.dark_toggler:checked:before {
+  transform: translate(150%);
+  transition: all 0.9s;
+  background-color: #bb86fc;
+}
+/* end of dark mode toggle switch button */
+
+html {
+  background-color: #f6f6f6;
+  transition: background-color .3s;
+}
+
+html[light-mode="dark"] {
+  background-color: #141516;
+  color: #ced4e2;
+}
+
+.dark-theme {
+  background-color: #2b2a2A;
+  transition: background-color .3s;
+  box-shadow: 0 0 0;
+}
+
+.dark-theme .navbar-nav .nav-link,
+.dark-theme .navbar-brand {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-theme .nav-link:hover{
+color: #ffffff !important;
+}
+
+.dark-theme .first,
+.dark-theme .second,
+.dark-theme .third {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dsc{
+   box-shadow:   2px 5px 5px 0px rgb(130 216 251), 
+   inset -2px -5px 5px 0px rgb(130 216 251);
+   background: #1f1d1d;
+}
+/*
+-------------------------------------
+  SIDEBAR SVG ANIMATION
+--------------------------------------
+*/
+
+.bike {
+  margin-top: 30px;
+  display: block;
+}
+
+#right-wheel,
+#left-wheel {
+  animation: wheel 3s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#man-bike {
+  animation: bikes 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#hat {
+  animation: hat 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheel {
+  from {
+      transform: rotateZ(0deg);
+  }
+  to {
+      transform: rotateZ(360deg);
+  }
+}
+
+@keyframes bikes {
+  from {
+      transform: rotateX(0deg);
+  }
+  to {
+      transform: rotateX(12deg);
+  }
+}
+
+@keyframes hat {
+  from {
+      transform: translateY(0%) rotateZ(0deg);
+  }
+  to {
+      transform: translateY(10%) rotateZ(20deg);
+  }
+}
+
+
+/*
+-------------------------------------
+  NAV BAR HIGHLIGHTING
+--------------------------------------
+*/
+
+@media only screen and (min-width: 1024px) {
+  .current-link {
+      font-weight: bolder;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+  }
+  .current-link:after {
+      content: "";
+      position: absolute;
+      left: 34%;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 0;
+      width: 32%;
+      border-bottom: 3px solid #6a00bb;
+  }
+  
+  .nav-item-hover::after {
+      content: "";
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 0.15em;
+      bottom: 0;
+      width: 0%;
+      background-color: #6a00bb;
+      transition: all ease-in-out 280ms;
+  }
+  
+  .nav-item:hover::after {
+      width: 50%;
+      
+  }
+
+  li.nav-item {
+      text-align: center;
+  }
+  a.nav-link {
+      padding: 6px 21px !important;
+  }
+
+  /* Hide svg on laptop screens to prevent overlap between sidebar and navbar */
+  .bike {
+      display: none;
+  }
+}
+
+/* navbar hover for light mode */
+html[light-mode="light"] .nav-link{
+  color: #000000 !important;
+}
+html[light-mode="light"] .nav-link:hover{
+  color: 	rgb(106, 0, 187) !important;
+}
+html[light-mode="light"] .navbar-brand:hover{
+  color: #000000 !important;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+      align-items: center;
+  }
+}
+
+
+/**Navbar burger animations**/
+
+.navbar-toggler {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  border-color: white;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 1.25rem 1rem;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 50px;
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.open .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.open .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.open .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+
+/*
+------------------------
+  FOOTER SECTION
+------------------------
+*/
+
+
+
+
+/* --------------- */
+/* -------Foote copy ahrshu */
+/*Footer*/
+
+.webintern-footer {
+  background-color: var(--bg-nav);
+  background-color: rgb(8, 8, 8);
+  background-image: var(--bg-nav-img);
+  padding: 20px;
+}
+.row{
+
+  clear: both;
+  margin: 0 auto;
+  padding:0 auto;
+  bottom: 0px;
+  clear: both !important;
+
+}
+
+.webintern-footer-inner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.webintern-footer-logo {
+  display: inline-block;
+}
+
+.webintern-footer .webintern-footer-inner .simple-text p {
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.simple-text p {
+  font-size: 15px;
+  color: #42435d;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 40rem) {
+  .simple-text p {
+    font-size: 20px;
+  }
+}
+
+.footer-2 {
+  float: right;
+  margin-right: 0px;
+}
+.webintern_footer_title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.webintern_footer_title small {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.webintern_footer_title:after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 2px;
+  background: #26a69a;
+  margin-top: 4px;
+}
+
+.contact-form #exampleInputEmail1 {
+  background-color: #fff;
+  padding: 0.375rem 0.75rem;
+  height: 2rem;
+  width: 93%;
+  font-size: 15px;
+  border-radius: 2px;
+  margin-bottom: 0px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-bottom: 1px solid #26a69a;
+}
+.form-group {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.webintern-footer .webintern-footer-inner .simple-text p {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.simple-text p {
+  font-size: 15px;
+  color: #42435d;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.footer-2 {
+  float: right;
+  margin-right: 0px;
+}
+.webintern_footer_title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.webintern_footer_title small {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  font-weight: 100;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.webintern_footer_title:after {
+  content: "";
+  display: block;
+  width: 7rem;
+  height: 2px;
+  background: #26a69a;
+  margin-top: 2px;
+}
+
+.contact-form #exampleInputEmail1 {
+  background-color: #fff;
+  padding: 0.375rem 0.75rem;
+  height: 2rem;
+  width: 93%;
+  font-size: 15px;
+  border-radius: 2px;
+}
+/*.tt-copy {
+  font-size: 0px;
+  line-height: 0px;
+  color: #fff;
+  padding: 0px 0;
+  font-family: "Open Sans", sans-serif;
+}*/
+
+/*Responsive*/
+
+@media (min-width: 40rem) {
+  .simple-text p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .webintern-footer .webintern-footer-inner .simple-text p {
+    width: 220px;
+  }
+}
+
+.send-btn {
+  padding-top: 5px 3px 5px 3px;
+  font-size: 10px;
+  transition-property: font-size;
+  transition: all 0.5s ease;
+  outline: none;
+}
+.send-btn:hover {
+  background-color: #0dfde5;
+  font-size: 13px;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+  background-color: #26a69a;
+  color: #fff;
+}
+
+.form-group:focus {
+  border: 2px solid black;
+}
+
+.text-animation {
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 20px;
+  }
+  100% {
+    letter-spacing: 2px;
+  }
+}
+
+/*social icons footer*/
+
+:root {
+  --link-size: 64px;
+  --trans-props: all 0.3s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
+}
+
+.social-icons-footer {
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  display: block;
+}
+
+.social-icon-footer {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size-footer-s);
+  height: var(--link-size-footer-s);
+  margin: 3px;
+  background-color: #db0569;
+  border-radius: 50%;
+  text-decoration: none;
+  float: left;
+}
+
+.social-icon-footer:hover{
+  background-color: #fdf90d;
+}
+
+.social-icon-footer i {
+  margin: auto;
+  font-size: 15px;
+  color: #fff;
+}
+
+.social-icon-footer:hover i {
+  color: #000000;
+}
+
+/*Responsive*/
+
+@media (min-width: 60rem) {
+  .social-icons-footer {
+    width: 280px;
+    text-align: center;
+  }
+
+  .social-icon-footer {
+    width: var(--link-size-footer-b);
+    height: var(--link-size-footer-b);
+  }
+
+  .social-icon-footer i {
+    font-size: 20px;
+  }
+}
+
+/*Animations*/
+
+.social-icon-footer:hover {
+  transform: translateY(-4px);
+}
+
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
