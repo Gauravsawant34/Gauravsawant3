@@ -74,7 +74,7 @@ let footer = $(`
     <!-- Social media icons for footer -->
 
 <div class="social-icons-footer">
-  <a class="social-icon-footer twitter" href="https://github.com/Gauravsawant34" target="_blank" rel="author">
+  <a class="social-icon-footer twitter" href="https://gauravsawant34.github.io/Gauravsawant/" target="_blank" rel="author">
     <i class="fab fa-instagram"></i>
       </a>
   
