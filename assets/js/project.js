@@ -14,7 +14,7 @@ const projects = [
     Githublink: " https://gauravsawant34.github.io/ZanCat-Website/",
   },
    {
-    title: "Survey Form",
+    title: "Simple personal site",
     cardImage: "assets/images/project-page/form.jpeg",
     description: "A survey form app built using HTML, CSS and web designing skills.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
