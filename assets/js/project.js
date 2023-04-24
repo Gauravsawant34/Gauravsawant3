@@ -15,7 +15,7 @@ const projects = [
   },
    {
     title: "Simple personal site",
-    cardImage: "assets/images/project-page/form.jpeg",
+    cardImage: "assets/images/project-page/sample.png",
     description: "A survey form app built using HTML, CSS and web designing skills.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: " https://gauravsawant34.github.io/Simple-personal-site/",
