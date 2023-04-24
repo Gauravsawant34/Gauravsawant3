@@ -6,20 +6,20 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
-    title: "Survey Form",
-    cardImage: "assets/images/project-page/form.jpeg",
-    description: "A survey form app built using HTML, CSS and web designing skills.",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "",
-    Githublink: "",
-  },
-  {
     title: "ZanCat",
     cardImage: "assets/images/project-page/zancat.jpg",
     description: "ZnCat website built using basic html,css,bootstrap.It has a clean and modern design,with a smple and easy-to-navigate user interface.",
     tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
     Previewlink: " https://gauravsawant34.github.io/ZanCat-Website/",
     Githublink: " https://gauravsawant34.github.io/ZanCat-Website/",
+  },
+   {
+    title: "Survey Form",
+    cardImage: "assets/images/project-page/form.jpeg",
+    description: "A survey form app built using HTML, CSS and web designing skills.",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: " https://gauravsawant34.github.io/Simple-personal-site/",
+    Githublink: "https://gauravsawant34.github.io/Gauravsawant/",
   },
   {
     title: "Gauravsawant Portfolio",
