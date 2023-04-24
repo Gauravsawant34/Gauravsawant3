@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Gauravsawant Portfolio",
-    cardImage: "assets/images/project-page/tic-tac-toe.png",
+    cardImage: "assets/images/project-page/portfolio.png",
     description:
       "My personal Portfolio WebPage.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
