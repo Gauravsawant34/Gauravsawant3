@@ -1,4 +1,4 @@
-AOS.init();
+/*AOS.init();
 
 // MOOCs Cards
 
@@ -52,7 +52,7 @@ const moocscards = [
     cardImage: "assets/images/education-page/coursera2.svg",
     moocLink: "",
   },
-   */
+   
   {
     title: "Data Structures & Algorithms",
     cardImage: "assets/images/education-page/udacity.svg",
@@ -60,9 +60,9 @@ const moocscards = [
       "",
   },
 ];
-
+*/
 /**/ 
-
+/*
 const showCards = () => {
   let output = "";
   moocscards.forEach(
@@ -105,8 +105,10 @@ const showCards1 = () => {
   bagdes.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards1);
-
+*/
 /* Timeline Section*/
+
+/*
 $(function () {
   window.sr = ScrollReveal();
 
@@ -117,7 +119,7 @@ $(function () {
         .addClass("js--fadeInRight");
     }
 
-    /*
+    
    sr.reveal(".js--fadeInRight", {
       origin: "right",
       distance: "300px",
@@ -146,7 +148,7 @@ $(function () {
     easing: "ease-in-out",
     duration: 800,
   });
-  */
+  
 
   sr.reveal(".js--fadeInRight", {
     origin: "right",
@@ -154,5 +156,9 @@ $(function () {
     easing: "ease-in-out",
     duration: 800,
   });
+  
+  
+  
 });
+*/
 
