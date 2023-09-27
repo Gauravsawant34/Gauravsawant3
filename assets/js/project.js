@@ -13,12 +13,13 @@ const projects = [
     Previewlink: " https://gauravsawant34.github.io/ZanCat-Website/",
     Githublink: " https://gauravsawant34.github.io/ZanCat-Website/",
   },
+ 
    {
-    title: "Simple personal site",
-    cardImage: "assets/images/project-page/sample.png",
-    description: "A survey form app built using HTML, CSS and web designing skills.",
+    title: "Mobile Shopping Cart-mCart",
+    cardImage: "assets/images/project-page/mcartshopp.png",
+    description: "mCart is built using Angular.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: " https://gauravsawant34.github.io/Simple-personal-site/",
+    Previewlink: "https://gauravsawant34.github.io/MobileShoppingCart/",
     Githublink: "https://gauravsawant34.github.io/Gauravsawant/",
   },
   {
@@ -30,14 +31,15 @@ const projects = [
     Previewlink: "https://gauravsawant34.github.io/Gauravsawant/",
     Githublink: "https://gauravsawant34.github.io/Gauravsawant/",
   },
-   {
-    title: "Mobile Shopping Cart-mCart",
-    cardImage: "assets/images/project-page/mcartshopp.png",
-    description: "mCart is built using Angular.",
+    {
+    title: "Simple personal site",
+    cardImage: "assets/images/project-page/sample.png",
+    description: "A survey form app built using HTML, CSS and web designing skills.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "https://gauravsawant34.github.io/MobileShoppingCart/",
+    Previewlink: " https://gauravsawant34.github.io/Simple-personal-site/",
     Githublink: "https://gauravsawant34.github.io/Gauravsawant/",
   },
+  
   {
     title: "Musicca Drumkit Engine",
     cardImage: "assets/images/project-page/musiccadrumkit.jpg",
