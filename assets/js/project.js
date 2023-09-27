@@ -32,7 +32,7 @@ const projects = [
   },
    {
     title: "Mobile Shopping Cart-mCart",
-    cardImage: "assets/images/project-page/mcartshop.png",
+    cardImage: "assets/images/project-page/mcartshopp.png",
     description: "mCart is built using Angular.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "https://gauravsawant34.github.io/MobileShoppingCart/",
