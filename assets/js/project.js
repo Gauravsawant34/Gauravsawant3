@@ -13,7 +13,6 @@ const projects = [
     Previewlink: " https://gauravsawant34.github.io/ZanCat-Website/",
     Githublink: " https://gauravsawant34.github.io/ZanCat-Website/",
   },
- 
    {
     title: "Mobile Shopping Cart-mCart",
     cardImage: "assets/images/project-page/mcartshopp.png",
@@ -39,7 +38,6 @@ const projects = [
     Previewlink: " https://gauravsawant34.github.io/Simple-personal-site/",
     Githublink: "https://gauravsawant34.github.io/Gauravsawant/",
   },
-  
   {
     title: "Musicca Drumkit Engine",
     cardImage: "assets/images/project-page/musiccadrumkit.jpg",
