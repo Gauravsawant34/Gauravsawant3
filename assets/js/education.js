@@ -42,7 +42,7 @@ const moocscards = [
 
   {
     title: "Fullstack Java Developement",
-    cardImage: "assets/images/education-page/coursera2.svg",
+    cardImage: "assets/images/education-page/SSPU.svg",
     moocLink: "",
   },
  
