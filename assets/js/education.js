@@ -28,17 +28,7 @@ const moocscards = [
     moocLink: " ",
   },
  
- // {
- //    title: "Bootstrap 4",
- //    cardImage: "assets/images/education-page/udemy.svg",
- //    moocLink: " ",
- //  },
- 
- // {
-  //   title: "Data Science",
-  //   cardImage: "assets/images/education-page/coursera2.svg",
-  //   moocLink: "",
-  // },
+
 
   {
     title: "Fullstack Java Developement",
@@ -52,6 +42,18 @@ const moocscards = [
     moocLink: "",
   },
  ];
+ // {
+ //    title: "Bootstrap 4",
+ //    cardImage: "assets/images/education-page/udemy.svg",
+ //    moocLink: " ",
+ //  },
+ 
+ // {
+  //   title: "Data Science",
+  //   cardImage: "assets/images/education-page/coursera2.svg",
+  //   moocLink: "",
+  // },
+
   // {
   //   title: "Intro to React",
   //   cardImage: "assets/images/education-page/edx.svg",
