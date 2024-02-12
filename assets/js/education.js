@@ -30,7 +30,7 @@ const moocscards = [
   },
   // {
   //   title: "Bootstrap 4",
-  //   cardImage: "assets/images/education-page/udemy.svg",
+  //   cardImage: "assets/images/education-page/infyspringboard.svg",
   //   moocLink: " ",
   // },
  
