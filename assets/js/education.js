@@ -22,17 +22,18 @@ const moocscards = [
     cardImage: "assets/images/education-page/infyspringboard.svg",
     moocLink: " ",
   },
-  
- {
+  {
     title: "Bootstrap 4",
-    cardImage: "assets/images/education-page/udemy.svg",
+    cardImage: "assets/images/education-page/infyspringboard.svg",
     moocLink: " ",
   },
-  // {
-  //   title: "Bootstrap 4",
-  //   cardImage: "assets/images/education-page/infyspringboard.svg",
-  //   moocLink: " ",
-  // },
+ 
+ // {
+ //    title: "Bootstrap 4",
+ //    cardImage: "assets/images/education-page/udemy.svg",
+ //    moocLink: " ",
+ //  },
+
  
   {
     title: "Data Science",
