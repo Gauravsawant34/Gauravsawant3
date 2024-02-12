@@ -1,4 +1,4 @@
-/*AOS.init();
+AOS.init();
 
 // MOOCs Cards
 
@@ -160,5 +160,5 @@ $(function () {
   
   
 });
-*/
+
 
