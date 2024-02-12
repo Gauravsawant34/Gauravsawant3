@@ -27,8 +27,11 @@ const moocscards = [
     cardImage: "assets/images/education-page/infyspringboard.svg",
     moocLink: " ",
   },
- 
-
+   {
+    title: "Introduction of IOT",
+    cardImage: "assets/images/education-page/udemy.svg",
+    moocLink: "https://drive.google.com/file/d/17xuet5pmehcUdqawW1PRV9EujzhdLMYp/view?usp=drive_link",
+  },
 
   {
     title: "Fullstack Java Developement",
