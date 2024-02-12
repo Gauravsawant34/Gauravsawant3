@@ -70,6 +70,12 @@ const moocscards = [
     moocLink:
       "",
   },
+  {
+    title: "Data Structures & Algorithms2",
+    cardImage: "assets/images/education-page/udacity.svg",
+    moocLink:
+      "",
+  },
 ];
 
 /**/ 
