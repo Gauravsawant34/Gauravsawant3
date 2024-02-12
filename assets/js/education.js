@@ -8,7 +8,7 @@ const moocscards = [
   {
     title: "Javascript",
     cardImage: "assets/images/education-page/infyspringboard.svg",
-    moocLink: " ",
+    moocLink: " https://drive.google.com/file/d/1ZBUoc_wKYE8zF3ELF1Q2fN-klGCoWkjX/view?usp=drive_link",
   },
   
   {
