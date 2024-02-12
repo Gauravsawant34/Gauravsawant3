@@ -28,7 +28,7 @@ const moocscards = [
     cardImage: "assets/images/education-page/udemy.svg",
     moocLink: " ",
   },
- /*
+ 
   {
     title: "Data Science",
     cardImage: "assets/images/education-page/coursera2.svg",
@@ -60,9 +60,8 @@ const moocscards = [
       "",
   },
 ];
-*/
+
 /**/ 
-/*
 const showCards = () => {
   let output = "";
   moocscards.forEach(
@@ -105,10 +104,10 @@ const showCards1 = () => {
   bagdes.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards1);
-*/
+
 /* Timeline Section*/
 
-/*
+
 $(function () {
   window.sr = ScrollReveal();
 
