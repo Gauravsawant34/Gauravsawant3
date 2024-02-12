@@ -45,37 +45,37 @@ const moocscards = [
     cardImage: "assets/images/education-page/infyspringboard.svg",
     moocLink: "",
   },
-  {
-    title: "Intro to React",
-    cardImage: "assets/images/education-page/edx.svg",
-    moocLink: "",
-  },
+  // {
+  //   title: "Intro to React",
+  //   cardImage: "assets/images/education-page/edx.svg",
+  //   moocLink: "",
+  // },
 
-  {
-    title: "Intro to React Native",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink:
-      "",
-  },
+  // {
+  //   title: "Intro to React Native",
+  //   cardImage: "assets/images/education-page/coursera2.svg",
+  //   moocLink:
+  //     "",
+  // },
  
-  {
-    title: "NodeJS, Express and MongoDB",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "",
-  },
+  // {
+  //   title: "NodeJS, Express and MongoDB",
+  //   cardImage: "assets/images/education-page/coursera2.svg",
+  //   moocLink: "",
+  // },
    
-  {
-    title: "Data Structures & Algorithms",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink:
-      "",
-  },
-  {
-    title: "Data Structures & Algorithms2",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink:
-      "",
-  },
+  // {
+  //   title: "Data Structures & Algorithms",
+  //   cardImage: "assets/images/education-page/udacity.svg",
+  //   moocLink:
+  //     "",
+  // },
+  // {
+  //   title: "Data Structures & Algorithms2",
+  //   cardImage: "assets/images/education-page/udacity.svg",
+  //   moocLink:
+  //     "",
+  // },
 ];
 
 /**/ 
