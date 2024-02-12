@@ -33,13 +33,19 @@ const moocscards = [
  //    cardImage: "assets/images/education-page/udemy.svg",
  //    moocLink: " ",
  //  },
-
  
+ // {
+  //   title: "Data Science",
+  //   cardImage: "assets/images/education-page/coursera2.svg",
+  //   moocLink: "",
+  // },
+
   {
-    title: "Data Science",
+    title: "Fullstack Java Developement",
     cardImage: "assets/images/education-page/coursera2.svg",
     moocLink: "",
   },
+ 
    {
     title: " React",
     cardImage: "assets/images/education-page/infyspringboard.svg",
