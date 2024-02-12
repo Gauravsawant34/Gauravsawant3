@@ -13,13 +13,13 @@ const moocscards = [
   
   {
     title: "Introduction to HTML 5",
-    cardImage: "assets/images/education-page/udacity.svg",
+    cardImage: "assets/images/education-page/Springboardlogo.svg",
     moocLink: "",
   },
   
    {
     title: "Introduction to CSS 3",
-    cardImage: "assets/images/education-page/udacity.svg",
+    cardImage: "assets/images/education-page/Springboardlogo.svg",
     moocLink: " ",
   },
   
