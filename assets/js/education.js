@@ -7,7 +7,7 @@ const moocscards = [
  
   {
     title: "Javascript",
-    cardImage: "assets/images/education-page/udacity.svg",
+    cardImage: "assets/images/education-page/infyspringboard.svg",
     moocLink: " ",
   },
   
@@ -28,10 +28,20 @@ const moocscards = [
     cardImage: "assets/images/education-page/udemy.svg",
     moocLink: " ",
   },
+  // {
+  //   title: "Bootstrap 4",
+  //   cardImage: "assets/images/education-page/udemy.svg",
+  //   moocLink: " ",
+  // },
  
   {
     title: "Data Science",
     cardImage: "assets/images/education-page/coursera2.svg",
+    moocLink: "",
+  },
+   {
+    title: " React",
+    cardImage: "assets/images/education-page/infyspringboard.svg",
     moocLink: "",
   },
   {
@@ -39,7 +49,7 @@ const moocscards = [
     cardImage: "assets/images/education-page/edx.svg",
     moocLink: "",
   },
-   
+
   {
     title: "Intro to React Native",
     cardImage: "assets/images/education-page/coursera2.svg",
