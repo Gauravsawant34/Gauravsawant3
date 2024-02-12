@@ -45,6 +45,7 @@ const moocscards = [
     cardImage: "assets/images/education-page/infyspringboard.svg",
     moocLink: "",
   },
+ ];
   // {
   //   title: "Intro to React",
   //   cardImage: "assets/images/education-page/edx.svg",
@@ -76,7 +77,7 @@ const moocscards = [
   //   moocLink:
   //     "",
   // },
-];
+//];
 
 /**/ 
 const showCards = () => {
